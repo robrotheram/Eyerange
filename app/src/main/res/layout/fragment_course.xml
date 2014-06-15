@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/celticmannor"
+        android:adjustViewBounds="true"
+
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Weather:"
+            android:textColor="#ff47474a"
+            android:id="@+id/weatherData"
+                android:layout_weight="1"
+            android:textSize="20dp"
+            android:padding="10dp"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+
+                android:src="@drawable/sunny"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Wind Speed:"
+        android:textColor="#ff47474a"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Wind Direction"
+            android:textColor="#ff47474a"
+            android:id="@+id/textView3"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Info"
+            android:textColor="#ff47474a"
+            android:id="@+id/textView4"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    </ScrollView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Celtic Mannor"
+        android:id="@+id/title"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#64ffffff"
+        android:autoText="true"
+        android:gravity="center"
+        android:padding="8dp" />
+
+
+</RelativeLayout>

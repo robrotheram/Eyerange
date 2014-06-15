@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="EyeRange"
+        android:id="@+id/Title"
+        android:layout_row="30"
+        android:layout_column="3"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textColorHint="#ff070003"
+        android:textColorLink="@android:color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:paddingTop="100dp"
+        android:shadowColor="#000000" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_row="32"
+        android:padding="10dp"
+        android:layout_column="3"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:editable="true"
+        android:background="#78ffffff"
+        android:layout_marginTop="8dp"
+        android:textIsSelectable="false"
+        android:password="true"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:text="Password" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/username"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_row="33"
+        android:layout_gravity="center"
+        android:layout_column="3"
+        android:textSize="20dp"
+        android:editable="true"
+        android:background="#78ffffff"
+        android:password="false"
+        android:text="Username"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/Loginbutton"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_marginTop="8dp"
+        android:layout_alignRight="@+id/password"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Not registered?  Click here!"
+        android:id="@+id/reg"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/Loginbutton"
+        android:layout_alignLeft="@+id/Loginbutton"
+        android:layout_alignRight="@+id/Loginbutton" />
+
+
+</RelativeLayout>

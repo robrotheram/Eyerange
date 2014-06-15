@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/robert/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes-67cfc0bf51adf30c03d956b26d82f8ea086798e6.jar"
+        jar="/Users/robert/AndroidStudioProjects/MyApplication/build/intermediates/exploded-aar/com.radiusnetworks/AndroidIBeaconLibrary/0.7.7/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="75f73efec4baff5df881fd3be3c517ca26f14ede"/>
+    <item
+        dex="/Users/robert/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/support-v13-18.0.0-eb76c766ec9c5780e6dccc0cc536d4699ff23cde.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v13/18.0.0/support-v13-18.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6a2fa0c0b54359ee359fd40244e1ce2dc6cab408"/>
+    <item
+        dex="/Users/robert/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/holeImg"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/hole1"
+        android:adjustViewBounds="true"
+
+        android:scaleType="centerCrop"
+        android:layout_weight="0.19" />
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/holeImg"
+        android:layout_alignLeft="@+id/holeImg"
+
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Par:     4"
+            android:textColor="#ff47474a"
+            android:id="@+id/textView"
+            android:textSize="20dp"
+            android:padding="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Distance to hole:     4"
+            android:textColor="#ff47474a"
+            android:id="@+id/textView2"
+            android:textSize="20dp"
+            android:padding="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="
+
+            Nullam congue lacus aliquam tellus mattis lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, ante nec ultricies tempor, metus nisi accumsan mi, vel tincidunt tellus quam sit amet lorem. Donec egestas, lacus vulputate volutpat volutpat, justo nibh porta nunc, non molestie diam massa aliquam ante. Morbi eu nisl tempor, tempor risus a, lacinia orci. Mauris at sagittis libero, sit amet feugiat tortor. In semper ante ligula, eget posuere ante hendrerit eu. Curabitur tristique massa vel metus interdum, eget eleifend urna placerat. Mauris id ante sed magna suscipit facilisis. Etiam pretium lorem id imperdiet pulvinar. Phasellus ultrices porttitor semper. Nullam accumsan velit vel erat congue, ac posuere justo mattis. Aenean vel orci euismod, aliquam turpis vitae, commodo est. Morbi auctor interdum orci, ac aliquet enim imperdiet vel. Nam eu lacus nunc. Morbi blandit porttitor odio, nec facilisis arcu pulvinar nec.
+
+            Nullam congue lacus aliquam tellus mattis lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, ante nec ultricies tempor, metus nisi accumsan mi, vel tincidunt tellus quam sit amet lorem. Donec egestas, lacus vulputate volutpat volutpat, justo nibh porta nunc, non molestie diam massa aliquam ante. Morbi eu nisl tempor, tempor risus a, lacinia orci. Mauris at sagittis libero, sit amet feugiat tortor. In semper ante ligula, eget posuere ante hendrerit eu. Curabitur tristique massa vel metus interdum, eget eleifend urna placerat. Mauris id ante sed magna suscipit facilisis. Etiam pretium lorem id imperdiet pulvinar. Phasellus ultrices porttitor semper. Nullam accumsan velit vel erat congue, ac posuere justo mattis. Aenean vel orci euismod, aliquam turpis vitae, commodo est. Morbi auctor interdum orci, ac aliquet enim imperdiet vel. Nam eu lacus nunc. Morbi blandit porttitor odio, nec facilisis arcu pulvinar nec.
+
+
+            "
+            android:textColor="#ff47474a"
+            android:id="@+id/textView3"
+            android:textSize="20dp"
+            android:padding="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

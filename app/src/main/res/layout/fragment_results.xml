@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bg"
+        android:adjustViewBounds="true"
+
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_below="@+id/imageView">
+
+        <TextView
+            android:id="@+id/Col_FirstText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rank"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:padding="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Col_SecondText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:text="Name">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Col_ThirdText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_weight="2">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Col_FourthText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Weather"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_weight="2">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentLeft="true">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </ListView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="true"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/defaultpic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+</RelativeLayout>
