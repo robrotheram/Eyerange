@@ -23,9 +23,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by robert on 12/06/2014.
- */
+
 public class ScoreFragment extends Fragment implements NetworkFeedback {
 
 
@@ -64,6 +62,8 @@ public class ScoreFragment extends Fragment implements NetworkFeedback {
                     nameValuePairs.add(new BasicNameValuePair("holeID", ""+dataStore.getHole().getHoleNumber()));
                     nameValuePairs.add(new BasicNameValuePair("score", score.getText().toString()));
                     dataStore.setTotalScore(dataStore.getTotalScore()+Integer.parseInt(score.getText().toString()));
+
+
                     BackgroundTask bt = new BackgroundTask(networkFeedback, dataStore,nameValuePairs,ListConstants.TYPE.JSON);
                     bt.execute("ddd");
                 }
@@ -74,9 +74,6 @@ public class ScoreFragment extends Fragment implements NetworkFeedback {
         return rootView;
     }
 
-    public void hole18(){
-
-    }
 
     @Override
     public void onPostComplete(DataStore dataStore, ListConstants.TYPE type) {
